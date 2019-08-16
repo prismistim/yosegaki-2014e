@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,700&display=swap');
+
+@import './_animate.min.css';
+@import './_reboot.min.css';
+
+body{
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  color: #3f3f3f;
+}
+
+svg{
+  margin: 0 12px;
+}
+
+.header{
+  h1.header-title{
+    margin: 20px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #af9a21;
+  }
+}
+
+.navibar{
+  margin: 10px 0;
+  text-align: center;
+
+  a.navi-btn{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #a0a0ff;
+    border: solid 1px #a0a0ff;
+  }
+
+  a.navi-btn:hover{
+    text-decoration: none;
+  }
+}
+
+.container{
+  width: 65%;
+  margin: 10px auto 10px;
+  border-radius: 5px;
+
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+
+  .info-text{
+    padding: 20px 10px;
+    background-color: #ceb737;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+  .sort-btn-field{
+    text-align: center;
+    color: #6a74fc;
+    font-weight: 700;
+
+    button.sort-btn{
+      color: #fff;
+      font-weight: 700;
+      background: #6a74fc;
+      border: none;
+    }
+  }
+
+  .vue-yosegaki-list-move{
+    transition: transform 1s;
+  }
+
+  .yosegaki-item{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 3px 2px rgba(50, 50, 50, 0.1);
+    border-radius: 10px;
+    background: #fcfcfc;
+
+    .img-field{
+      background-color: #CCC;
+      border-radius: 5px;
+
+      img.yosegaki-img{
+        display: block;
+        width: 600px;
+        margin: auto;
+      }
+    }
+
+    p.yosegaki-description{
+      margin: 10px 0;
+      padding: 10px;
+      font-family: 'Sawarabi Mincho', sans-serif;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #555;
+      white-space: pre-wrap;
+    }
+
+    .yosegaki-author{
+      border-top: solid 1px #e9e9e9;
+      padding-top: 10px;
+      font-weight: 700;
+      color: #999;
+
+      span.yosegaki-date{
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  h3.section-title{
+    padding: 20px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  h4.sub-section-title{
+    margin: 10px 0 0 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  p.description{
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    letter-spacing: 5px;
+  }
+
+  .btn-field{
+    margin: 10px;
+    padding: 20px 0;
+    background-color: #F0F0F0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    a.link-btn.twitter{
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #3fb9ff;
+
+      color: #fff;
+    }
+
+    a.link-btn.bandcamp{
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #3F3FFF;
+
+      color: #fff;
+    }
+
+    a.link-btn:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 7em;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .header{
+    .cake-field{
+      height: 300px;
+    }
+  }
+  
+  .navibar{
+    margin: 10px 0;
+    text-align: center;
+
+    a.navi-btn{
+      width: 150px;
+    }
+  }
+
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 3.5em;
+    }
+  }
+
+  .container{
+    width: 90%;
+
+    h3.section-title{
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header{
+    .cake-field{
+      height: 200px;
+    }
+  }
+
+  .navibar{
+    margin: 10px 0;
+    text-align: center;
+
+    a.navi-btn{
+      width: 100px;
+    }
+  }
+
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 3.5em;
+    }
+  }
+
+  .container{
+    width: 100%;
+    padding: 10px 20px;
+
+    h3.section-title{
+      font-size: 1.5em;
+    }
+
+    .yosegaki-item{
+      margin: 10px 0;
+      .img-field{
+        img.yosegaki-img{
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
