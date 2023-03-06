@@ -1,20 +1,25 @@
-<template lang="pug">
-  div
-    .info-text.animated.pulse(v-if="loading") Loading...
-    .yosegaki-list(v-else)
-      .sort-btn-field
-        div sort
-        button.sort-btn(v-on:click="order=!order") Older / Newer
-      transition-group(tag="div" name="vue-yosegaki-list" enter-active-class="fadeInUp" leave-active-class="fadeOutDown")
-        YosegakiItem(
-          v-for = "{ attr, description, name, id, date } in this.sorted"
-          v-bind:attr = "attr"
-          v-bind:description = "description"
-          v-bind:name = "name"
-          v-bind:date = "date"
-          :key = "id"
-          stagger = "50"
-        )
+<template>
+  <div>
+    <div class="info-text" v-if="loading">
+      Loading...
+    </div>
+    <div class="yosegaki-list" v-else>
+      <div class="sort-btn-field">
+        <div>sort</div>
+        <div class="button sort-btn" @click="order =! order">Older / Newer</div>
+      </div>
+      <div>
+        <YosegakiItem
+          v-for="{ attr, description, name, id, date } in sorted"
+          :key="id"
+          :attr="attr"
+          :description="description"
+          :name="name"
+          :date="date"
+        ></YosegakiItem>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

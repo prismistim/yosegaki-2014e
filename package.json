@@ -1,15 +1,16 @@
 {
-  "name": "ez2bug",
+  "name": "yosegaki-2014e",
   "version": "0.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "dev": "vite --host"
   },
   "author": "snowsphere",
   "license": "ISC",
   "dependencies": {
+    "@vue/runtime-dom": "^3.2.47",
     "animate.css": "^3.7.2",
     "async": "^3.0.1",
     "axios": "^0.19.0",
