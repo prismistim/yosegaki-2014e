@@ -1,10 +1,10 @@
 {
   "name": "yosegaki-2014e",
+  "private": true,
   "version": "0.0.1",
   "description": "",
-  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "watch": "webpack --watch",
     "dev": "vite --host"
   },
   "author": "snowsphere",
@@ -12,19 +12,17 @@
   "dependencies": {
     "@vue/runtime-dom": "^3.2.47",
     "animate.css": "^3.7.2",
-    "async": "^3.0.1",
     "axios": "^0.19.0",
     "google-spreadsheet": "^2.0.7",
     "lodash": "^4.17.13",
     "vue": "^3.2.45",
-    "vue-router": "^3.0.6",
+    "vue-router": "4",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "pug": "^2.0.3",
-    "pug-loader": "^2.4.0",
-    "pug-plain-loader": "^1.0.0",
+    "autoprefixer": "^10.4.14",
+    "sass": "^1.59.2",
     "vite": "^4.0.4"
   }
 }

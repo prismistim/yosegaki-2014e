@@ -1,3 +1,7 @@
+<script setup>
+const props = defineProps(['attr', 'description', 'name', 'date'])
+</script>
+
 <template>
   <div class="template-item">
     <div class="img-field"><img :src="attr" alt="yosegaki-img" class="yosegaki-img"></div>
@@ -8,10 +12,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "yosegaki",
-  props: ['attr', 'description', 'name', 'date']
-}
-</script>
